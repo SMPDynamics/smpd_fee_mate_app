@@ -1,4 +1,4 @@
-package com.example.smpd_fee_mate_app
+package com.smpdynamics.feemate
 
 import io.flutter.embedding.android.FlutterActivity
 
