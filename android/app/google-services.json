@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225186221765",
+    "project_id": "smpd-fee-mate",
+    "storage_bucket": "smpd-fee-mate.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225186221765:android:9580c0e1163bcb08fa6aac",
+        "android_client_info": {
+          "package_name": "com.smpdynamics.feemate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuQ_xgxsCFrwKKT7ZQFTVYv7q_9gMr7Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
