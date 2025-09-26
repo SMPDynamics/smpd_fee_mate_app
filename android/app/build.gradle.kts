@@ -11,7 +11,7 @@ plugins {
 android {
     namespace = "com.smpdynamics.feemate"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "29.0.14033849"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

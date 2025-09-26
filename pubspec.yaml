@@ -31,6 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^4.0.0
+  font_awesome_flutter: ^10.5.0
+  form_builder_validators: ^11.2.0
+  flutter_form_builder: ^10.2.0
+  flutter_svg: ^2.2.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -52,6 +56,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  assets:
+    - assets/android_neutral_rd_na.svg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
