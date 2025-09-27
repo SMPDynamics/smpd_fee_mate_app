@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/authentication/presentation/screens/dashboard_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -84,7 +85,12 @@ class LoginPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      // Navigate to DashboardPage after successful login
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => const DashboardPage()),
+                      );
+                    },
                     child: const Text(
                       'Login',
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
