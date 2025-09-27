@@ -6,6 +6,7 @@ import 'package:smpd_fee_mate_app/core/components/app_bottom_nav_bar.dart';
 import 'package:smpd_fee_mate_app/core/components/app_drawer.dart';
 import 'package:smpd_fee_mate_app/core/components/app_header.dart';
 import 'package:smpd_fee_mate_app/core/utils/app_colors.dart';
+import 'package:smpd_fee_mate_app/core/widgets/custom_button.dart';
 import 'package:smpd_fee_mate_app/core/widgets/custom_info_list_section.dart';
 import 'package:smpd_fee_mate_app/core/widgets/custom_stat_card.dart';
 
@@ -71,9 +72,9 @@ class _DashboardPageState extends State<DashboardPage> {
         avatarUrl: '',
       ),
       endDrawer: const AppDrawer(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -81,7 +82,6 @@ class _DashboardPageState extends State<DashboardPage> {
               // Stats Cards
               _buildStatCards(statCards),
               const SizedBox(height: 28),
-              // Upcoming Sessions
               CustomInfoListSection(
                 title: upcomingSessions['title'],
                 items: (upcomingSessions['items'] as List)
@@ -104,19 +104,22 @@ class _DashboardPageState extends State<DashboardPage> {
                         ))
                     .toList(),
               ),
-              const SizedBox(height: 80), // Space for floating action button
+              const SizedBox(height: 24),
+              Align(
+                alignment: Alignment.centerRight,
+                child: CustomButton(
+                  btnText: 'New Session',
+                  icon: const Icon(Icons.add),
+                  onPressed: () {},
+                  btnRadius: 12,
+                  shape: ButtonShape.roundedRectangle,
+                ),
+              ),
+              const SizedBox(height: 24),
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        label: const Text('New Session'),
-        icon: const Icon(Icons.add),
-        backgroundColor: AppColors.primaryColor,
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      // Bottom navigation bar
       bottomNavigationBar: const AppBottomNavBar(),
     );
   }
@@ -125,28 +128,19 @@ class _DashboardPageState extends State<DashboardPage> {
     List<Widget> rows = [];
     for (int i = 0; i < statCards.length; i += 2) {
       List<Widget> rowChildren = [];
-
-      // Add the first card in the pair
       rowChildren.add(
         _buildStatCard(statCards[i]),
       );
-
-      // Add a spacer
       rowChildren.add(const SizedBox(width: 12));
-
-      // Add the second card if it exists
       if (i + 1 < statCards.length) {
         rowChildren.add(
           _buildStatCard(statCards[i + 1]),
         );
       } else {
-        // If there's an odd number of cards, add an empty Expanded widget
-        // to maintain alignment.
         rowChildren.add(Expanded(child: Container()));
       }
 
-      rows.add(Row(children: rowChildren));
-      // Add space between rows
+      rows.add(IntrinsicHeight(child: Row(children: rowChildren)));
       if (i + 2 < statCards.length) {
         rows.add(const SizedBox(height: 12));
       }

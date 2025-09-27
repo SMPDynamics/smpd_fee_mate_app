@@ -29,35 +29,33 @@ class CustomStatCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: AppColors.dividerColor),
           ),
-          child: IntrinsicHeight(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Text(
-                        title,
-                        style: const TextStyle(
-                            fontSize: 14, color: AppColors.textColor),
-                      ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Text(
+                      title,
+                      style: const TextStyle(
+                          fontSize: 14, color: AppColors.textColor),
                     ),
-                    Icon(icon, color: AppColors.primaryColor),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  '· $value',
-                  style: const TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.secondaryColor,
                   ),
+                  Icon(icon, color: AppColors.primaryColor),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Text(
+                '· $value',
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.secondaryColor,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
