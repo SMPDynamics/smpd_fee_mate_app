@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smpd_fee_mate_app/core/components/app_bottom_nav_bar.dart';
-import 'package:smpd_fee_mate_app/core/components/app_drawer.dart';
-import 'package:smpd_fee_mate_app/core/components/app_header.dart';
+import 'package:smpd_fee_mate_app/core/widgets/app_bottom_nav_bar.dart';
+import 'package:smpd_fee_mate_app/core/widgets/app_drawer.dart';
+import 'package:smpd_fee_mate_app/core/widgets/app_header.dart';
 import 'package:smpd_fee_mate_app/core/utils/app_colors.dart';
 import 'package:smpd_fee_mate_app/core/widgets/custom_button.dart';
 import 'package:smpd_fee_mate_app/core/widgets/custom_info_list_section.dart';

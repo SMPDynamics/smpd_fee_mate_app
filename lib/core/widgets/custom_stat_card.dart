@@ -47,13 +47,27 @@ class CustomStatCard extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
-                '· $value',
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.secondaryColor,
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text(
+                    '·',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.secondaryColor,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    value,
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.secondaryColor,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
