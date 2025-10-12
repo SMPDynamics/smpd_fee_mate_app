@@ -102,13 +102,13 @@ class LoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Row(
-                  children: const [
-                    Expanded(child: Divider()),
-                    Padding(
+                  children: [
+                    const Expanded(child: Divider()),
+                    const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text('OR', style: TextStyle(color: Colors.grey)),
                     ),
-                    Expanded(child: Divider()),
+                    const Expanded(child: Divider()),
                   ],
                 ),
                 const SizedBox(height: 24),
