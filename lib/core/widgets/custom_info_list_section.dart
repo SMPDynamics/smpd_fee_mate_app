@@ -45,26 +45,24 @@ class CustomInfoListSection extends StatelessWidget {
         InkWell(
           onTap: () {
             // TODO: Implement 'View All' functionality
-          },
-          child: const Padding(
-            padding: EdgeInsets.symmetric(vertical: 8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'View All',
-                  style: TextStyle(
-                    color: AppColors.dividerColor,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                Icon(
-                  Icons.arrow_forward_ios,
-                  size: 16.0,
+        const Padding(
+          padding: EdgeInsets.symmetric(vertical: 8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'View All',
+                style: TextStyle(
                   color: AppColors.dividerColor,
+                  fontWeight: FontWeight.w500,
                 ),
-              ],
-            ),
+              ),
+              Icon(
+                Icons.arrow_forward_ios,
+                size: 16.0,
+                color: AppColors.dividerColor,
+              ),
+            ],
           ),
         ),
       ],
