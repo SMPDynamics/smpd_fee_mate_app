@@ -98,6 +98,7 @@ class LoginPage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 24),
