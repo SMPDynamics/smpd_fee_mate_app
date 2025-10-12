@@ -20,7 +20,9 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
       leading: Padding(
         padding: const EdgeInsets.all(8.0),
         child: CircleAvatar(
-          backgroundImage: NetworkImage(avatarUrl),
+          backgroundImage: (avatarUrl.isNotEmpty)
+              ? NetworkImage(avatarUrl)
+              : const AssetImage('assets/images/default_avatar.png') as ImageProvider,
         ),
       ),
       title: Text(
