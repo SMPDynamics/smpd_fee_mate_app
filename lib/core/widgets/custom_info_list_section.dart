@@ -43,6 +43,9 @@ class CustomInfoListSection extends StatelessWidget {
           },
         ),
         InkWell(
+          onTap: () {
+            // TODO: Implement 'View All' functionality
+          },
           child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Row(
