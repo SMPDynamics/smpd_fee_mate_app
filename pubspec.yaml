@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^4.1.1
+  firebase_core: ^4.0.0
   font_awesome_flutter: ^10.5.0
   form_builder_validators: ^11.2.0
   flutter_form_builder: ^10.2.0
@@ -59,7 +59,6 @@ flutter:
 
   assets:
     - assets/android_neutral_rd_na.svg
-    - assets/data/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
+  country_pickers:
+    dependency: transitive
+    description:
+      name: country_pickers
+      sha256: b10f6618fa64fbba02ffc4ad1b84dc0ca071cc206e5376de1698bddd980b355a
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -69,10 +77,10 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_core
-      sha256: "4dd96f05015c0dcceaa47711394c32971aee70169625d5e2477e7676c01ce0ee"
+      sha256: "967dae9a65f69377beb9f4ab292ea63ce5befa1ce24682cab1b69ca4b7a46927"
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.1"
+    version: "4.1.0"
   firebase_core_platform_interface:
     dependency: transitive
     description:
@@ -85,10 +93,10 @@ packages:
     dependency: transitive
     description:
       name: firebase_core_web
-      sha256: "61a51037312dac781f713308903bb7a1762a7f92f7bc286a3a0947fb2a713b82"
+      sha256: f7ee08febc1c4451588ce58ffcf28edaee857e9a196fee88b85deb889990094a
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.1"
+    version: "3.1.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -141,6 +149,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.10.0"
+  form_builder_phone_field:
+    dependency: "direct main"
+    description:
+      name: form_builder_phone_field
+      sha256: c89ea400428bb22707a8d76e433070bef4a74de15a085060e1d75f9e3b660cab
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   form_builder_validators:
     dependency: "direct main"
     description:
@@ -253,6 +269,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  phone_numbers_parser:
+    dependency: transitive
+    description:
+      name: phone_numbers_parser
+      sha256: "87b2c344e1ae28bc92ee9e534b30ef85a16d4e7279a770c222aaefe2eeac6f02"
+      url: "https://pub.dev"
+    source: hosted
+    version: "9.0.11"
   plugin_platform_interface:
     dependency: transitive
     description:
