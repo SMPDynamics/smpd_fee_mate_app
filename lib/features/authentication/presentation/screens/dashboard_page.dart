@@ -161,8 +161,8 @@ class _DashboardPageState extends State<DashboardPage> {
             content: Text('You tapped on "${cardData['title']}" card.'),
             actions: [
               TextButton(
-          onPressed: () => Navigator.of(context).pop(),
-          child: const Text('OK'),
+                onPressed: () => Navigator.of(context).pop(),
+                child: const Text('OK'),
               ),
             ],
           ),
