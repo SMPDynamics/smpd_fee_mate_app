@@ -30,7 +30,9 @@ class CustomInfoListSection extends StatelessWidget {
             return ListTile(
               contentPadding: EdgeInsets.zero,
               leading: CircleAvatar(
-                backgroundImage: NetworkImage(item.avatarUrl),
+                backgroundImage: (item.avatarUrl != null && item.avatarUrl.isNotEmpty)
+                    ? NetworkImage(item.avatarUrl)
+                    : const AssetImage('assets/images/default_avatar.png') as ImageProvider,
                 radius: 22,
               ),
               title: Text(item.title,
